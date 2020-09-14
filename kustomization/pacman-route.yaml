@@ -7,3 +7,9 @@ spec:
   to:
     kind: Service
     name: pacman
+    weight: 100
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
